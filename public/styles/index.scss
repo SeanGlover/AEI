@@ -1,0 +1,127 @@
+$shadow: 0px 3px 10px rgba(0,0,0,.10);
+$box-padding: .8em;
+$color-primary: #f857a8;
+$color-secondary:#ff5858;
+$color-neutral-lt: #fff;
+$color-neutral-med: #ddd;
+$headings-font: 'Saira Semi Condensed', sans-serif;
+
+@mixin icon-box{
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: $box-padding;
+}
+
+@mixin no-space{
+    padding: 0px;
+    margin: 0px;
+}
+
+@mixin main-gradient{
+    background: $color-primary;
+    background: -webkit-linear-gradient(45deg, $color-primary, $color-secondary);
+    background: linear-gradient(45deg, $color-primary, $color-secondary);
+}
+
+/*-----Reset-----*/
+form{
+  width: 50%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+button{
+    margin: 0px;
+}
+
+input, button{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+} 
+
+textarea{
+    border: none;
+}
+
+/*-----Styles-----*/
+body {
+     background: repeating-linear-gradient(45deg, rgba(255,255,255,.05) 0px, rgba(255,255,255,.05) 2px, rgba(0,0,0,.025) 2px,  rgba(0,0,0,.025) 4px);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
+button, input, textarea{
+  font-family: $headings-font;
+}
+
+.hidden {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+ }
+
+.input{
+   width: 100%;
+   margin-bottom: .75em;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.icon{
+    @include icon-box;
+    display: inline-block;
+    align-self: stretch;
+    color: $color-neutral-med;
+    transition: color .75s;
+}
+
+.icon-content{
+    @include icon-box;
+    width: 100%;
+    z-index: 2;
+  
+    &:focus{
+      outline: 2px solid $color-primary;
+    }
+  
+    &:focus ~ .icon{
+    color: $color-primary;
+    }
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: $shadow;
+    width: 100%;
+    padding: $box-padding;
+    border-radius: 2em;
+  
+    &:hover{
+      @include main-gradient;
+      color:  #fff;
+      box-shadow: 0px 5px 5px rgba(0,0,0,.125);
+      animation-name: button-hover;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(.38,.38,.12,.96);
+    }
+}
+
+@keyframes button-hover {
+    100%{
+        @include main-gradient;
+        color: $color-neutral-lt;
+        border-radius: 0px;
+    }
+}

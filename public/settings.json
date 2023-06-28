@@ -1,0 +1,17 @@
+{
+    "liveSassCompile.settings.formats":[
+      {
+        "format": "expanded",
+        "extensionName":".css",
+        "savePath":"/styles"
+      },
+  
+      // You can also use this minified extension for production, as it reduces the file size
+  
+      {
+        "format": "compressed",
+        "extensionName":".min.css",
+        "savePath":"/styles"
+      }
+    ]
+}

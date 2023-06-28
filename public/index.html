@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    
+    <!-- fontawesome Icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+    <!-- https://codepen.io/247flashgames/pen/RwKNpqN -->
+    <link rel="shortcut icon" href="images/AEI_logo.png">
+    <link rel="stylesheet" href="/public/styles/styles.css"/>
+    <link rel="stylesheet" href="/public/styles/index.scss"/>
+    <script type="module" src="index.js" defer></script>
+
+    <title>Académie Equestre Internationale</title>
+</head>
+<body style="font-family: 'Raleway', sans-serif;">
+  <nav class="navbar sticky-top bg-dark">
+    <div class="container-fluid">
+      <img src="images/AEI_logo.png" style="height: 100px; width: 100px;">
+      <a class="navbar-brand" href="#" style="font-weight: bold; font-size:xx-large; text-align: start; color: white;">Académie Equestre Internationale</a>
+      <ul class="wrapper">
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <span><i class="fa fa-facebook-f"></i></span>
+        </li>
+        <li class="icon twitter">
+          <span class="tooltip">Twitter</span>
+          <span><i class="fa fa-twitter"></i></span>
+        </li>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <span><i class="fa fa-instagram"></i></span>
+        </li>
+        <li class="icon github">
+          <span class="tooltip">Github</span>
+          <span><i class="fa fa-github"></i></span>
+        </li>
+        <li class="icon youtube">
+          <span class="tooltip">Youtube</span>
+          <span><i class="fa fa-youtube"></i></span>
+        </li>
+      </ul>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-paper-plane"></i>
+                  Contactez-Nous
+              </a>
+              <ul class="dropdown-menu">
+                  <li>
+                    <!-- https://codepen.io/acarlie/pen/qejqRL -->
+                    <form action="" id="contact-form" style="width: 600px;">
+                      <div style="font-size:medium ; text-align: left; background-color: black; color: white; margin: 8px; border-radius: 5px;">
+                        <i class="fa fa-phone" style="padding-left: 5px;"></i>
+                        (514) 566-6608<br>
+                        <i class="fa fa-location-arrow" style="padding-left: 5px;"></i>
+                        2653 Boulevard Perrot ● 
+                        Notre-Dame-de-l'Île-Perrot ● 
+                        Quebec J7V 8P4 ● 
+                        Canada
+                      </div>
+                      <div class="input mb">
+                        <div class="hidden"><label for="name" class="required">Name</label></div>
+                        <div class="icon-container"><input type="text" name="name" id="name" placeholder="Name" class="icon-content" required><span class="fa fa-user icon"></span></div>
+                      </div>
+                      <div class="input mb">
+                        <div class="hidden"><label for="email" class="required">Email</label></div>
+                        <div class="icon-container"><input type="email" name="email" id="email" placeholder="Email" class="icon-content" required><span class="fa fa-envelope icon"></span></div>
+                      </div>                    
+                      <div class="input mb">
+                        <div class="hidden"><label for="subject" class="required">Subject</label></div>
+                        <div class="icon-container"><input type="text" name="subject" id="subject" placeholder="Subject" class="icon-content" required><span class="fa fa-pencil icon"></span></div>
+                      </div>
+
+                      <table>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Programmes
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Camp de jour
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Autre
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Activités
+                              </label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Pension
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <div class="input mb">
+                        <div class="hidden"><label for="message" class="required">Message</label></div>
+                        <div class="icon-container"><textarea name="message" id="message" cols="10" rows="5" placeholder="Message..." class="icon-content" required></textarea><span class="fa fa-quote-left icon"></span></div>
+                      </div>
+                    
+                      <div class="input mb">
+                        <button type="submit" class="btn text-center">Send Message</button>
+                      </div>
+                    </form>
+                  </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-gift"></i>
+                  Boutique
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <form action="" id="contact-form" style="width: 600px; height: 400px;">
+                    <img src="/public/images/merchStore.png" style="height: 400px;width:900px;">
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <div class="wrapper">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-solid fa-heart"></i>
+                  <span class="tooltip">L'académie équestre est le lieu idéal pour les cavaliers souhaitant développer leur passion pour les chevaux. Nous offrons des programmes personnalisés en fonction des objectifs de chacun, ainsi que des options de pension et de demi-pension pour les chevaux.</span>
+                  Notre mission
+                </a>
+              </div>
+            </li>  
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-globe"></i>
+                  Langue
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                <li><a class="dropdown-item" href="#">中文</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+  </nav>
+  <!-- Example Code -->    
+  <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <h5 style="font-size: x-large; padding-top: 10px;">Nos programmes</h5>
+              <div class="card-group">
+                  <div class="card">
+                      <img src="images/aeiClassic.png" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+                  <div class="card-body">
+                      <h5 class="card-title">Classique</h5>
+                      <p class="card-text">
+                          Notre programme classique vise à faire découvrir l'équitation à tous sur une fréquence 1x semaine. Ce programme propose des leçons d'équitation récréatives, visant à s'amuser, à se détacher de la vie quotidienne avec nos chevaux. Vos objectif personnels serons mis de l’avant, quel que soit votre âge ou votre niveau.
+                          Notre session de printemps débute le 1 mai et se termine le 25 juin 2023. 
+                          <!-- Pour seulement 500$ vous aurez la chance de passer 8 semaines dans un groupe adapter à votre niveau et vos objectifs personnels. -->
+                      </p>
+                      <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                      </p>
+                  </div>
+                  </div>
+                  <div class="card">
+                  <img src="images/aeiSport.png" class="card-img-top" alt="Palm Springs Road"/>
+                  <div class="card-body">
+                      <h5 class="card-title">Sportif</h5>
+                      <p class="card-text">Notre programme sportif offre des leçons 2x semaines, plus techniques et intensives, visant à améliorer les compétences et les performances des cavaliers à tous les niveaux. Cela tout en dirigeant leurs objectifs vers la performance et les concours.
+                          Notre session de printemps débute le 1 mai et se termine le 25 juin 2023. 
+                          Pour seulement 1000$ vous aurez la chance de passer 8 semaines dans un groupe adapter à votre niveau et vos objectifs personnels.
+                      <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                      </p>
+                  </div>
+                  </div>
+                  <div class="card">
+                  <img src="images/aeiElite.png" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                  <div class="card-body">
+                      <h5 class="card-title">Elite</h5>
+                      <p class="card-text">
+                          Notre programme Elite est un programme axé uniquement sur des objectifs de compétition. Il accompagne les cavaliers dans un programme intensif de 3 entraînements par semaine pour atteindre leurs objectifs de performance. Il est conçu pour les cavaliers les plus démérites qui cherchent à atteindre le plus haut niveau de compétition possible. Il met en place un plan d'entraînement personnalisé entre le cavalier et sa monture pour atteindre les meilleures performances possibles.
+                          Pour participer à ce programme, les cavaliers sont dans l'obligation d'avoir un cheval personnel ou un cheval confié en demi-pension afin de pouvoir travailler sur un cheval stable pour atteindre les objectifs de compétition.
+                      </p>
+                      <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                      </p>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <h5 style="font-size: x-large; padding-top: 10px;">Activités</h5>
+            <div class="card-group">
+                <div class="card">
+                    <img src="images/aeiClassic.png" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-calendar"></i>
+                      Événements</h5>
+                    <p class="card-text">
+                      Notre écurie est fière de vous offrir régulièrement des événements festifs pour vous permettre de profiter de votre passion pour les chevaux dans un cadre amusant et agréable. Que ce soit pour célébrer un anniversaire, une fête de fin d'année ou tout autre occasion spéciale, nous organisons des événements sur mesure pour répondre à vos besoins et vous permettre de passer un moment inoubliable en compagnie de nos chevaux.
+                        <!-- Pour seulement 500$ vous aurez la chance de passer 8 semaines dans un groupe adapter à votre niveau et vos objectifs personnels. -->
+                    </p>
+                    <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="images/aeiSport.png" class="card-img-top" alt="Palm Springs Road"/>
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-gift"></i>
+                      Fêtes d'Enfant</h5>
+                    <p class="card-text">Vous souhaitez offrir à votre enfant une fête d'anniversaire inoubliable ? Pourquoi ne pas opter pour une expérience équestre dans notre écurie ? Votre enfant et ses amis pourront passer du temps avec nos chevaux, les brosser et les nourrir, les monter en selle pour des balades à travers les prairies et participer à des activités éducatives sur les soins des chevaux et leur comportement.
+                    <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="images/aeiElite.png" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-tachometer"></i>
+                      Grand Gallops</h5>
+                    <p class="card-text">
+                      Venez vivre une expérience unique et inoubliable au Centre équestre avec notre toute nouvelle offre: Grand Galop!
+                      Cette offre est parfaite pour les passionnés de séries télévisées qui rêvent de dormir à l'écurie sous la belle étoile. Avec Grand Galop, vous aurez l'opportunité de passer une nuit de camping dans la maison des chevaux et de monter votre cheval préféré au magnifique lever de soleil.
+                    </p>
+                    <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- <div id="horse" role="img" aria-label="galloping horse" draggable>&#x1F40E;</div> -->
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect>
+                <text x="50%" y="50%" fill="#333" dy=".3em">
+
+                </text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Card title</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  <!-- End Example Code -->
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
