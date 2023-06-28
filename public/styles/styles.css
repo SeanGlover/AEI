@@ -180,7 +180,7 @@ form {
 	margin: 10px;
 	width: 50px;
 	height: 50px;
-	font-size: 18px;
+	font-size: 26px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -212,7 +212,7 @@ form {
 	position: absolute;
 	top: 0;
 	font-size: 14px;
-	background: #ffffff;
+	background: whitesmoke;
 	color: #ffffff;
 	padding: 5px 8px;
 	border-radius: 5px;
@@ -221,7 +221,7 @@ form {
 	pointer-events: none;
 	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  
+	/* little square (below) for caption effect */
   .wrapper .tooltip::before {
 	position: absolute;
 	content: "";
@@ -230,6 +230,18 @@ form {
 	background: #ffffff;
 	bottom: -3px;
 	left: 50%;
+	transform: translate(-50%) rotate(45deg);
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  	/* little square (above) for caption effect */
+  .wrapper #heartTip::before {
+	position: absolute;
+	content: "";
+	height: 12px;
+	width: 12px;
+	background: black;
+	top: -6px;
+	left: 30px;
 	transform: translate(-50%) rotate(45deg);
 	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -245,13 +257,15 @@ form {
   }
   .wrapper .nav-link:hover {color:red}
   .wrapper .nav-link:hover .tooltip {
-	top: 45px;
+	top: 50px;
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
 	width: 500px;
-	height: 200px;
-	color: #88F;
+	height: auto;
+	color: white;
+	background-color: black;
+	box-shadow: 10px 10px 5px rgb(128 128 128 / 60%);
   }  
   
   .wrapper .facebook:hover,
@@ -278,7 +292,7 @@ form {
   .wrapper .github:hover,
   .wrapper .github:hover .tooltip,
   .wrapper .github:hover .tooltip::before {
-	background: #333333;
+	background: rgb(78, 78, 78);
 	color: #ffffff;
   }
   
