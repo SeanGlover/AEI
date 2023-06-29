@@ -302,3 +302,23 @@ form {
 	background: #CD201F;
 	color: #ffffff;
   }
+
+  /* Carousel Control */
+.control-box {
+	margin: 0;
+	top: 0px;
+    position: absolute;
+    text-align: center;
+	height: 40px;
+    width: 100%;
+}
+.carousel-control {
+	border: 0px;
+	font-size: 45px;
+	border-radius: 0px;
+	display: inline-block;
+	line-height: 40px;
+	opacity: 0.5;
+	height: 40px;
+	width: 30%;
+}
