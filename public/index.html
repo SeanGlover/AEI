@@ -60,28 +60,30 @@
           <span><i class="fa fa-youtube"></i></span>
         </li>
       </ul>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-light" type="button" style="margin: 0px;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" style="color: white;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
+        <div class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:medium ; text-align: left; color: white; margin: 8px; border-radius: 5px;">
+          <div style="display: flex; align-items: left; justify-content: left">
+            <i class="fa fa-phone" style="padding: 5px;"></i>
+            (514) 566-6608
+          </div>
+          <div style="display: flex; align-items: left; justify-content: left">
+            <i class="fa fa-envelope" style="padding: 5px;"></i>
+            info@centreequestrenotredame.com
+          </div>
+          <div style="display: flex; align-items: left; justify-content: left">
+            <i class="fa fa-location-arrow" style="padding: 5px;"></i>
+            2653 Boulevard Perrot<br>
+            Notre-Dame-de-l'Île-Perrot<br>
+            Quebec J7V 8P4<br>
+            Canada
+          </div>
+        </div>
+
+        <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form> -->
@@ -104,17 +106,6 @@
                   <li>
                     <!-- https://codepen.io/acarlie/pen/qejqRL -->
                     <form action="" id="contact-form" style="width: 600px;">
-                      <div style="font-size:medium ; text-align: left; background-color: black; color: white; margin: 8px; border-radius: 5px;">
-                        <i class="fa fa-phone" style="padding-left: 5px;"></i>
-                        (514) 566-6608<br>
-                        <i class="fa fa-envelope" style="padding-left: 5px;"></i>
-                        info@centreequestrenotredame.com<br>
-                        <i class="fa fa-location-arrow" style="padding-left: 5px;"></i>
-                        2653 Boulevard Perrot ● 
-                        Notre-Dame-de-l'Île-Perrot ● 
-                        Quebec J7V 8P4 ● 
-                        Canada
-                      </div>
                       <div class="input mb">
                         <div class="hidden"><label for="name" class="required">Name</label></div>
                         <div class="icon-container"><input type="text" name="name" id="name" placeholder="Name" class="icon-content" required><span class="fa fa-user icon"></span></div>
@@ -208,8 +199,7 @@
                   Notre mission
                 </a>
               </div>
-            </li>  
-
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-globe"></i>
@@ -287,68 +277,112 @@
             <h5 style="font-size: x-large; padding-top: 10px;">Activités</h5>
             <div class="card-group">
                 <div class="card">
-                    <img src="images/aeiClassic.png" class="card-img-top" alt="Hollywood Sign on The Hill"/>
-                <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fa fa-calendar"></i>
-                      Événements</h5>
-                    <p class="card-text">
-                      Notre écurie est fière de vous offrir régulièrement des événements festifs pour vous permettre de profiter de votre passion pour les chevaux dans un cadre amusant et agréable. Que ce soit pour célébrer un anniversaire, une fête de fin d'année ou tout autre occasion spéciale, nous organisons des événements sur mesure pour répondre à vos besoins et vous permettre de passer un moment inoubliable en compagnie de nos chevaux.
-                        <!-- Pour seulement 500$ vous aurez la chance de passer 8 semaines dans un groupe adapter à votre niveau et vos objectifs personnels. -->
-                    </p>
-                    <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                </div>
-                </div>
-                <div class="card">
-                <img src="images/aeiSport.png" class="card-img-top" alt="Palm Springs Road"/>
-                <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fa fa-gift"></i>
-                      Fêtes d'Enfant</h5>
-                    <p class="card-text">Vous souhaitez offrir à votre enfant une fête d'anniversaire inoubliable ? Pourquoi ne pas opter pour une expérience équestre dans notre écurie ? Votre enfant et ses amis pourront passer du temps avec nos chevaux, les brosser et les nourrir, les monter en selle pour des balades à travers les prairies et participer à des activités éducatives sur les soins des chevaux et leur comportement.
-                    <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                </div>
+                  <img src="images/aeiClassic.png" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+                  <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fa fa-calendar"></i>
+                        Événements</h5>
+                      <p class="card-text">
+                        Notre écurie est fière de vous offrir régulièrement des événements festifs pour vous permettre de profiter de votre passion pour les chevaux dans un cadre amusant et agréable. Que ce soit pour célébrer un anniversaire, une fête de fin d'année ou tout autre occasion spéciale, nous organisons des événements sur mesure pour répondre à vos besoins et vous permettre de passer un moment inoubliable en compagnie de nos chevaux.
+                          <!-- Pour seulement 500$ vous aurez la chance de passer 8 semaines dans un groupe adapter à votre niveau et vos objectifs personnels. -->
+                      </p>
+                      <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                      </p>
+                  </div>
                 </div>
                 <div class="card">
-                <img src="images/aeiElite.png" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-                <div class="card-body">
-                    <h5 class="card-title">
-                      <i class="fa fa-tachometer"></i>
-                      Grand Gallops</h5>
-                    <p class="card-text">
-                      Venez vivre une expérience unique et inoubliable au Centre équestre avec notre toute nouvelle offre: Grand Galop!
-                      Cette offre est parfaite pour les passionnés de séries télévisées qui rêvent de dormir à l'écurie sous la belle étoile. Avec Grand Galop, vous aurez l'opportunité de passer une nuit de camping dans la maison des chevaux et de monter votre cheval préféré au magnifique lever de soleil.
-                    </p>
-                    <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
+                  <img src="images/aeiSport.png" class="card-img-top" alt="Palm Springs Road"/>
+                  <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fa fa-gift"></i>
+                        Fêtes d'Enfant</h5>
+                      <p class="card-text">Vous souhaitez offrir à votre enfant une fête d'anniversaire inoubliable ? Pourquoi ne pas opter pour une expérience équestre dans notre écurie ? Votre enfant et ses amis pourront passer du temps avec nos chevaux, les brosser et les nourrir, les monter en selle pour des balades à travers les prairies et participer à des activités éducatives sur les soins des chevaux et leur comportement.
+                      <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                      </p>
+                  </div>
                 </div>
+                <div class="card">
+                  <img src="images/aeiElite.png" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                  <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fa fa-tachometer"></i>
+                        Grand Gallops</h5>
+                      <p class="card-text">
+                        Venez vivre une expérience unique et inoubliable au Centre équestre avec notre toute nouvelle offre: Grand Galop!
+                        Cette offre est parfaite pour les passionnés de séries télévisées qui rêvent de dormir à l'écurie sous la belle étoile. Avec Grand Galop, vous aurez l'opportunité de passer une nuit de camping dans la maison des chevaux et de monter votre cheval préféré au magnifique lever de soleil.
+                      </p>
+                      <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                      </p>
+                  </div>
                 </div>
             </div>
           </div>
           <div class="carousel-item">
-            <!-- <div id="horse" role="img" aria-label="galloping horse" draggable>&#x1F40E;</div> -->
-            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect>
-                <text x="50%" y="50%" fill="#333" dy=".3em">
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <h5 style="font-size: x-large; padding-top: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Nos camps</h5>
+              <button type="button" class="btn btn-primary" id="liveToastBtn" style="margin-left: 10px; z-index: 10;">Show availability</button>
+            </div>
+            <div class="toast-container position-fixed p-3" style="font-family: 'Raleway', sans-serif;">
+              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                <div class="toast-header">
+                  <i class="fa fa-calendar" style="margin-right: 10px;"></i><strong class="me-auto">Availability</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="container">
+                  <div class="jumbotron">
+                    <div class="row week-selector">
+                      <div class="col-md-8">
+                        L’Académie Équestre Internationale offre 8 semaines de camps de jours pour l’été 2023. Pour les enfants âge de 7 à 14 ans.
+                        L’horaire du camp de jours est du lundi au vendredi de 8h à 16h.
+                        Le prix est de 550$ taxes incluses pour une semaine.
+                        <div class="form-group clearfix">
+                          <label class="control-label pull-left" for="weekpicker">Select Week</label>
+                          <div class="col-sm-8" style="width: 100%;">
+                            <span class="icon-block">
+                              <input type="text" class="form-control" id="weekpicker">
+                              <span class="icon-date"></span>
+                            </span>
+                            <div class="week-controls">
+                              <button id="prevWeek" class="prev-week">Prev</button>
+                              <button id="nextWeek" class="next-week">Next</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                </text>
-            </svg>
-            <div class="carousel-caption d-none d-md-block">
-            <h5>Card title</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <div class="card-group">
+              <div class="card">
+                <img src="images/aeiCamps.png" class="card-img-top" style="height: 500px; width: 80%; margin-left: auto; margin-right: auto;" alt="Hollywood Sign on The Hill"/>
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-trophy"></i>
+                      Camp de jour</h5>
+                    <p class="card-text">
+                      Venez découvrir notre camp de jour équestre! Nous offrons une semaine de découverte autour des chevaux. Plusieurs activités au programme visant le développement des cavaliers, la confiance en soi et le sens des responsabilités. Votre enfant apprendra à prendre soin des chevaux, à les monter et à les comprendre. Il sera encadré par des professionnels expérimentés qui veilleront sur sa sécurité et sur son épanouissement. 
+                    </p>
+                    <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+              </div>    
             </div>
         </div>
       </div>
-      <div class="control-box">
-        <button class="carousel-control left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <div class="control-box" style="z-index: 0">
+        <button class="carousel-control left" style="margin-right: 100px;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control right" style="margin-left: 100px;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>        

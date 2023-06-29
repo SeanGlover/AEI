@@ -21,7 +21,7 @@ td {padding-left: 10px; color: #f857a8;}
 p { margin-block: 0.75em; }
 a { color: #88F; }
 
-h5{
+h5 {
     font-weight: bold;
     font-size: larger;
     text-align: center;
@@ -234,7 +234,7 @@ form {
 	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   	/* little square (above) for caption effect */
-  .wrapper #heartTip::before {
+  #heartTip::before {
 	position: absolute;
 	content: "";
 	height: 12px;
@@ -266,36 +266,31 @@ form {
 	color: white;
 	background-color: black;
 	box-shadow: 10px 10px 5px rgb(128 128 128 / 60%);
-  }  
-  
+  } 
   .wrapper .facebook:hover,
   .wrapper .facebook:hover .tooltip,
   .wrapper .facebook:hover .tooltip::before {
 	background: #1877F2;
 	color: #ffffff;
   }
-  
-  .wrapper .twitter:hover,
+  wrapper .twitter:hover,
   .wrapper .twitter:hover .tooltip,
   .wrapper .twitter:hover .tooltip::before {
 	background: #1DA1F2;
 	color: #ffffff;
   }
-  
   .wrapper .instagram:hover,
   .wrapper .instagram:hover .tooltip,
   .wrapper .instagram:hover .tooltip::before {
 	background: #E4405F;
 	color: #ffffff;
   }
-  
   .wrapper .github:hover,
   .wrapper .github:hover .tooltip,
   .wrapper .github:hover .tooltip::before {
 	background: rgb(78, 78, 78);
 	color: #ffffff;
   }
-  
   .wrapper .youtube:hover,
   .wrapper .youtube:hover .tooltip,
   .wrapper .youtube:hover .tooltip::before {
@@ -321,4 +316,16 @@ form {
 	opacity: 0.5;
 	height: 40px;
 	width: 30%;
+}
+.carousel-control .right {
+	padding: 100px;
+}
+.datepicker .datepicker-days tr td.active ~ td, .datepicker .datepicker-days tr td.active {
+	color: #af1623 !important;
+	background: transparent !important;
+}
+.datepicker .datepicker-days tr:hover td {
+	color: #000;
+	background: #e5e2e3;
+	border-radius: 0;
 }
