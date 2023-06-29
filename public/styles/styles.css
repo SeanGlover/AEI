@@ -305,7 +305,7 @@ form {
 
   /* Carousel Control */
 .control-box {
-	margin: 0;
+	margin: 0px;
 	top: 0px;
     position: absolute;
     text-align: center;
