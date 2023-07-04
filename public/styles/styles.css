@@ -326,7 +326,7 @@ form {
    background-color: white;
  }
 
-th {
+ #calendar th {
    border-width: 3px;
    border-style: ridge;
    border-color:gainsboro;
@@ -335,7 +335,7 @@ th {
    background-color: gainsboro;
    color: black;
 }
-td {
+#calendar td {
    text-align: center;
    border: 1px solid grey;
    cursor: pointer;
