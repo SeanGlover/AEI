@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    
+
     <!-- fontawesome Icon CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -108,11 +108,11 @@
                     <form action="" id="contact-form" style="width: 600px;">
                       <div class="input mb">
                         <div class="hidden"><label for="name" class="required">Name</label></div>
-                        <div class="icon-container"><input type="text" name="name" id="name" placeholder="Name" class="icon-content" required><span class="fa fa-user icon"></span></div>
+                        <div class="icon-container"><input type="text" name="name" id="name" placeholder="Name" autocomplete="off" class="icon-content" required><span class="fa fa-user icon"></span></div>
                       </div>
                       <div class="input mb">
                         <div class="hidden"><label for="email" class="required">Email</label></div>
-                        <div class="icon-container"><input type="email" name="email" id="email" placeholder="Email" class="icon-content" required><span class="fa fa-envelope icon"></span></div>
+                        <div class="icon-container"><input type="email" name="email" id="email" placeholder="Email" autocomplete="off" class="icon-content" required><span class="fa fa-envelope icon"></span></div>
                       </div>                    
                       <div class="input mb">
                         <div class="hidden"><label for="subject" class="required">Subject</label></div>
@@ -131,16 +131,16 @@
                           </td>
                           <td>
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                              <label class="form-check-label" for="defaultCheck2">
                                 Camp de jour
                               </label>
                             </div>
                           </td>
                           <td>
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                              <label class="form-check-label" for="defaultCheck3">
                                 Autre
                               </label>
                             </div>
@@ -149,16 +149,16 @@
                         <tr>
                           <td>
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                              <label class="form-check-label" for="defaultCheck4">
                                 Activités
                               </label>
                             </div>
                           </td>
                           <td>
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                              <label class="form-check-label" for="defaultCheck5">
                                 Pension
                               </label>
                             </div>
@@ -215,7 +215,7 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" id="searchSite" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
@@ -333,28 +333,43 @@
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
                 <div class="container">
-                  <div class="jumbotron">
-                    <div class="row week-selector">
-                      <div class="col-md-8">
-                        L’Académie Équestre Internationale offre 8 semaines de camps de jours pour l’été 2023. Pour les enfants âge de 7 à 14 ans.
-                        L’horaire du camp de jours est du lundi au vendredi de 8h à 16h.
-                        Le prix est de 550$ taxes incluses pour une semaine.
-                        <div class="form-group clearfix">
-                          <label class="control-label pull-left" for="weekpicker">Select Week</label>
-                          <div class="col-sm-8" style="width: 100%;">
-                            <span class="icon-block">
-                              <input type="text" class="form-control" id="weekpicker">
-                              <span class="icon-date"></span>
-                            </span>
-                            <div class="week-controls">
-                              <button id="prevWeek" class="prev-week">Prev</button>
-                              <button id="nextWeek" class="next-week">Next</button>
-                            </div>
-                          </div>
+                  <!-- L’Académie Équestre Internationale offre 8 semaines de camps de jours pour l’été 2023. Pour les enfants âge de 7 à 14 ans.
+                  L’horaire du camp de jours est du lundi au vendredi de 8h à 16h.
+                  Le prix est de 550$ taxes incluses pour une semaine. -->
+                <table id="calendar">
+                    <thead>
+                      <tr>
+                        <th>
+                            <i class="fa fa-chevron-up" id="back"></i>
+                            Select
+                            <i class="fa fa-chevron-down" id="ahead"></i>
+                        </th>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody id="calbody"></tbody>
+                </table>
+                <!-- Modal -->
+                <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- Pas de disponibilité -->
+                            <h1 class="modal-title fs-5" id="calendarModalLabel">This week is no longer available</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                      </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
                     </div>
-                  </div>
+                    </div>
+                </div>
                 </div>
               </div>
             </div>
